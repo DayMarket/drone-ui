@@ -42,7 +42,6 @@ const GlobalRequestWrapper = ({ render }) => {
 export default function App() {
   const { pathname } = useLocation();
   return (
-    <React.StrictMode>
       <SWRConfig value={swrConfig}>
         <AppContextProvider>
           <GlobalRequestWrapper render={({ user }) => (
@@ -146,6 +145,5 @@ export default function App() {
           />
         </AppContextProvider>
       </SWRConfig>
-    </React.StrictMode>
   );
 }

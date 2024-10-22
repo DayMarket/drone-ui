@@ -6,10 +6,8 @@ import App from './app';
 import './styles/app.scss';
 
 ReactDOM.render(
-  <React.StrictMode>
     <BrowserRouter>
       <App />
-    </BrowserRouter>
-  </React.StrictMode>,
+    </BrowserRouter>,
   document.getElementById('root'),
 );
