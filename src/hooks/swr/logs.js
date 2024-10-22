@@ -1,4 +1,4 @@
-import AnsiUp from 'ansi_up';
+import {AnsiUp} from 'ansi_up';
 import {
   useState, useRef, useEffect, useMemo, useCallback,
 } from 'react';

@@ -4,7 +4,6 @@ import {
 } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import { SWRConfig } from 'swr';
-
 import { VISIBILITY_LEVELS } from '_constants';
 import Sidebar from 'components/shared/sidebar';
 import { AppContextProvider, AppContext } from 'context';
