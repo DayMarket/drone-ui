@@ -4,13 +4,13 @@ import {
 } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import { SWRConfig } from 'swr';
-import { VISIBILITY_LEVELS } from '_constants';
-import Sidebar from 'components/shared/sidebar';
-import { AppContextProvider, AppContext } from 'context';
-import { useStreamBuildEvents, useViewer } from 'hooks/swr';
-import { Layouts } from 'layouts';
-import License from 'pages/license';
-import { axiosWrapper } from 'utils';
+import { VISIBILITY_LEVELS } from './_constants';
+import Sidebar from './components/shared/sidebar';
+import { AppContextProvider, AppContext } from './context';
+import { useStreamBuildEvents, useViewer } from './hooks/swr';
+import { Layouts } from './layouts';
+import License from './pages/license';
+import { axiosWrapper } from './utils';
 import 'react-toastify/dist/ReactToastify.min.css';
 
 import { Routes } from './routes/routes';

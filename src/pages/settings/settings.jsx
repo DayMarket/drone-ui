@@ -11,8 +11,8 @@ import Button from 'components/shared/button';
 import { AppContext } from 'context';
 import { useToast, useCustomTitle } from 'hooks';
 import { useRepo } from 'hooks/swr';
-import { ReactComponent as DemoIcon } from 'svg/demo.svg';
-import { ReactComponent as NotActiveIcon } from 'svg/not-active.svg';
+import DemoIcon  from 'svg/demo.svg';
+import NotActiveIcon  from 'svg/not-active.svg';
 import { axiosWrapper } from 'utils';
 
 import Badges from './badges';

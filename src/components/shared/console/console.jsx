@@ -6,10 +6,10 @@ import React, {
 
 import Button from 'components/shared/button';
 import Status from 'components/shared/status';
-import { ReactComponent as CloseIcon } from 'svg/close.svg';
-import { ReactComponent as DownloadIcon } from 'svg/download-cloud.svg';
-import { ReactComponent as PauseIcon } from 'svg/pause.svg';
-import { ReactComponent as PlayIcon } from 'svg/play.svg';
+import CloseIcon from 'svg/close.svg';
+import DownloadIcon from 'svg/download-cloud.svg';
+import PauseIcon from 'svg/pause.svg';
+import PlayIcon from 'svg/play.svg';
 
 import styles from './console.module.scss';
 import {

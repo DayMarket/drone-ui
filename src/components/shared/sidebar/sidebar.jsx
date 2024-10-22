@@ -6,11 +6,11 @@ import { Link, NavLink } from 'react-router-dom';
 import { THEMES } from '_constants';
 import { useTheme } from 'hooks';
 import logo from 'svg/logo.svg';
-import { ReactComponent as SearchIcon } from 'svg/search.svg';
-import { ReactComponent as SettingsIcon } from 'svg/settings.svg';
-import { ReactComponent as DarkThemeIcon } from 'svg/theme-dark.svg';
-import { ReactComponent as LightThemeIcon } from 'svg/theme-light.svg';
-import { ReactComponent as UserIcon } from 'svg/user.svg';
+import SearchIcon  from 'svg/search.svg';
+import SettingsIcon  from 'svg/settings.svg';
+import DarkThemeIcon  from 'svg/theme-dark.svg';
+import LightThemeIcon  from 'svg/theme-light.svg';
+import UserIcon  from 'svg/user.svg';
 
 import Avatar from '../avatar';
 import Button from '../button';

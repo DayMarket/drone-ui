@@ -8,7 +8,7 @@ import { useParams } from 'react-router-dom';
 import Button from 'components/shared/button';
 import Elapsed from 'components/shared/elapsed';
 import Status from 'components/shared/status';
-import { ReactComponent as CloseIcon } from 'svg/close.svg';
+import CloseIcon from 'svg/close.svg';
 import { getFullDateRepresentation } from 'utils';
 
 import ConsoleManager from '../../log-view/console-manager';

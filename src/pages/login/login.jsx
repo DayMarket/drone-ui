@@ -3,8 +3,8 @@ import React, { useState } from 'react';
 
 import Button from 'components/shared/button';
 import Form, { Field, FormSection } from 'components/shared/form';
-import { ReactComponent as DroneLogo } from 'svg/logo-full.svg';
-import { ReactComponent as WelcomePageIllustration } from 'svg/welcome-illustration.svg';
+import DroneLogo from 'svg/logo-full.svg';
+import WelcomePageIllustration from 'svg/welcome-illustration.svg';
 
 import css from './login.module.scss';
 

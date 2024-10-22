@@ -2,7 +2,7 @@ import classNames from 'classnames/bind';
 import { formatDistanceToNow, intervalToDuration } from 'date-fns';
 import React from 'react';
 
-import { ReactComponent as ClockIcon } from 'svg/clock.svg';
+import ClockIcon from 'svg/clock.svg';
 
 import css from './elapsed.module.scss';
 

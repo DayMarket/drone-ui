@@ -5,8 +5,8 @@ import { useParams } from 'react-router-dom';
 
 import { instance } from '_constants';
 import Avatar from 'components/shared/avatar';
-import { ReactComponent as BranchesIcon } from 'svg/branches.svg';
-import { ReactComponent as GitNodeIcon } from 'svg/git-node.svg';
+import BranchesIcon from 'svg/branches.svg';
+import GitNodeIcon from 'svg/git-node.svg';
 
 import styles from './activity.module.scss';
 

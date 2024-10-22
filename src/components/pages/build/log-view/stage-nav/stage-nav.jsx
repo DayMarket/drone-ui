@@ -8,7 +8,7 @@ import { NavLink, useParams } from 'react-router-dom';
 import Elapsed from 'components/shared/elapsed';
 import Status from 'components/shared/status';
 import { useDynamicHeight } from 'hooks';
-import { ReactComponent as ChevronIcon } from 'svg/chevron-down.svg';
+import ChevronIcon from 'svg/chevron-down.svg';
 
 import styles from './stage-nav.module.scss';
 

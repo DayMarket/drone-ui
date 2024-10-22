@@ -9,8 +9,8 @@ import Button from 'components/shared/button';
 import DotsMenu from 'components/shared/dots-menu';
 import Elapsed from 'components/shared/elapsed';
 import Status from 'components/shared/status';
-import { ReactComponent as ArrowIcon } from 'svg/arrow.svg';
-import { ReactComponent as CalendarIcon } from 'svg/calendar.svg';
+import ArrowIcon from 'svg/arrow.svg';
+import CalendarIcon from 'svg/calendar.svg';
 import { getFullDateRepresentation } from 'utils';
 
 import { VIEWS } from '../index';

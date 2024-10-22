@@ -4,7 +4,7 @@ import React from 'react';
 
 import Button from 'components/shared/button';
 import { useCustomTitle } from 'hooks';
-import { ReactComponent as NotFoundIcon } from 'svg/not-found.svg';
+import NotFoundIcon from 'svg/not-found.svg';
 
 import css from './not-found.module.scss';
 

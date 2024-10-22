@@ -2,7 +2,7 @@ import classNames from 'classnames/bind';
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import { ReactComponent as SearchIcon } from 'svg/search.svg';
+import SearchIcon from 'svg/search.svg';
 
 import Label from '../label';
 

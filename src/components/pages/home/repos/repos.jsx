@@ -5,7 +5,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import Status from 'components/shared/status';
-import { ReactComponent as Commit } from 'svg/scm/commit.svg';
+import Commit from 'svg/scm/commit.svg';
 
 import styles from './repos.module.scss';
 

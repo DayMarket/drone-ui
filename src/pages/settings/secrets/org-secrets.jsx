@@ -6,7 +6,7 @@ import Button from 'components/shared/button';
 import Modal, { useModal } from 'components/shared/modal';
 import { useToast } from 'hooks';
 import { useOrgSecrets } from 'hooks/swr';
-import { ReactComponent as DemoIcon } from 'svg/demo.svg';
+import DemoIcon from 'svg/demo.svg';
 import { axiosWrapper } from 'utils';
 
 import styles from './secrets.module.scss';

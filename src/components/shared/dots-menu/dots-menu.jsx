@@ -2,7 +2,7 @@ import classNames from 'classnames/bind';
 import React, { useEffect, useState, useRef } from 'react';
 
 import { useOnClickOutside } from 'hooks';
-import { ReactComponent as DotsVerticalIcon } from 'svg/dots-vertical.svg';
+import DotsVerticalIcon from 'svg/dots-vertical.svg';
 
 import css from './dots-menu.module.scss';
 

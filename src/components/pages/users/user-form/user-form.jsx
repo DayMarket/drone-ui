@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 
 import Button from 'components/shared/button';
 import Form, { Field, FormSection } from 'components/shared/form';
-import { ReactComponent as NotAllowedIcon } from 'svg/not-allowed.svg';
+import NotAllowedIcon from 'svg/not-allowed.svg';
 
 import css from './user-form.module.scss';
 

@@ -8,7 +8,7 @@ import Modal, { useModal } from 'components/shared/modal';
 import { useCustomTitle, useToast } from 'hooks';
 import { useUserList } from 'hooks/swr';
 // @TODO: use a proper user icon
-import { ReactComponent as DemoIcon } from 'svg/demo.svg';
+import DemoIcon from 'svg/demo.svg';
 import { pick, axiosWrapper } from 'utils';
 
 import css from './users.module.scss';

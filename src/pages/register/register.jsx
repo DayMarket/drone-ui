@@ -4,8 +4,8 @@ import { useHistory } from 'react-router-dom';
 
 import Button from 'components/shared/button';
 import Form, { Field, FormSection } from 'components/shared/form';
-import { ReactComponent as DroneLogo } from 'svg/logo-full.svg';
-import { ReactComponent as WelcomePageIllustration } from 'svg/welcome-illustration.svg';
+import DroneLogo from 'svg/logo-full.svg';
+import WelcomePageIllustration from 'svg/welcome-illustration.svg';
 import { axiosWrapper } from 'utils';
 
 import css from './register.module.scss';

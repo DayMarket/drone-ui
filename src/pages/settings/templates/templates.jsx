@@ -9,9 +9,9 @@ import Form, { Field, FormSection } from 'components/shared/form';
 import Modal, { useModal } from 'components/shared/modal';
 import { useToast } from 'hooks';
 import { useTemplates } from 'hooks/swr';
-import { ReactComponent as DemoIcon } from 'svg/demo.svg';
-import { ReactComponent as EditIcon } from 'svg/edit.svg';
-import { ReactComponent as TrashIcon } from 'svg/trash.svg';
+import DemoIcon  from 'svg/demo.svg';
+import EditIcon  from 'svg/edit.svg';
+import TrashIcon  from 'svg/trash.svg';
 import { axiosWrapper } from 'utils';
 
 import styles from './templates.module.scss';

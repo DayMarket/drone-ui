@@ -2,9 +2,9 @@ import classNames from 'classnames/bind';
 import React from 'react';
 import { useLocation } from 'react-router-dom';
 
-import { ReactComponent as ChevronDownIcon } from 'svg/chevron-down.svg';
-import { ReactComponent as DroneLogo } from 'svg/logo-full.svg';
-import { ReactComponent as WelcomePageIllustration } from 'svg/welcome-illustration.svg';
+import  ChevronDownIcon  from 'svg/chevron-down.svg';
+import  DroneLogo  from 'svg/logo-full.svg';
+import  WelcomePageIllustration  from 'svg/welcome-illustration.svg';
 
 import css from './welcome.module.scss';
 

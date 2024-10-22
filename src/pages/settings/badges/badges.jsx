@@ -6,7 +6,7 @@ import { useParams } from 'react-router-dom';
 import { instance } from '_constants';
 import Button from 'components/shared/button';
 import Form, { Field } from 'components/shared/form';
-import { ReactComponent as CopyIcon } from 'svg/copy.svg';
+import CopyIcon from 'svg/copy.svg';
 
 import styles from './badges.module.scss';
 

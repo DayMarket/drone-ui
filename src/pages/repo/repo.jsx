@@ -17,7 +17,7 @@ import { useToast } from 'hooks';
 import { useRepo, updateBuilds } from 'hooks/swr';
 import NotFound from 'pages/not-found';
 import { Routes } from 'routes/routes';
-import { ReactComponent as DemoIcon } from 'svg/demo.svg';
+import DemoIcon from 'svg/demo.svg';
 import { axiosWrapper } from 'utils';
 
 import css from './repo.module.scss';

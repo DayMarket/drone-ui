@@ -3,7 +3,7 @@
   "version": "2.12.0",
   "private": true,
   "scripts": {
-    "start": "react-scripts start",
+    "start": "vite",
     "build": "GENERATE_SOURCEMAP=false react-scripts build",
     "postbuild": "rm -rf ./dist/files; mv ./build ./dist/files",
     "serve": "npx http-server ./build -p 3001",
@@ -23,6 +23,7 @@
     "@emotion/styled": "^10.0.27",
     "@monaco-editor/react": "^4.2.2",
     "@projectstorm/react-diagrams": "^6.0.1-beta.7",
+    "@vitejs/plugin-react": "^4.3.3",
     "adaptive-expressions": "^4.14.1",
     "adaptivecards": "^2.10.0",
     "adaptivecards-react": "^1.1.1",
@@ -48,6 +49,7 @@
     "resize-observer-polyfill": "^1.5.1",
     "swiper": "^8.4.7",
     "swr": "^0.3.9",
+    "vite": "^5.4.9",
     "zustand": "^3.5.2"
   },
   "devDependencies": {
@@ -66,7 +68,9 @@
     "lint-staged": "^10.5.3",
     "react-app-rewired": "^2.2.1",
     "react-scripts": "^5.0.1",
-    "sass": "1.80.2"
+    "sass": "1.80.2",
+    "vite-plugin-svgo": "^1.6.2",
+    "vite-plugin-svgr": "^4.2.0"
   },
   "browserslist": {
     "production": [

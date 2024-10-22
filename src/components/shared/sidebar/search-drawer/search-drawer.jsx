@@ -7,8 +7,8 @@ import { Link } from 'react-router-dom';
 import Button from 'components/shared/button';
 import { useOnClickOutside } from 'hooks';
 import { useStore } from 'hooks/store';
-import { ReactComponent as ArrowBack } from 'svg/arrow.svg';
-import { ReactComponent as SearchIcon } from 'svg/search.svg';
+import ArrowBack from 'svg/arrow.svg';
+import SearchIcon from 'svg/search.svg';
 import { searchRepos, sortRepos } from 'utils';
 
 import styles from './search-drawer.module.scss';

@@ -2,7 +2,7 @@ import { PortWidget } from '@projectstorm/react-diagrams';
 import classNames from 'classnames/bind';
 import React from 'react';
 
-import { ReactComponent as GraphStartIcon } from 'svg/graph-start.svg';
+import GraphStartIcon from 'svg/graph-start.svg';
 
 import css from './node-edge-widget.module.scss';
 

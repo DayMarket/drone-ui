@@ -4,10 +4,10 @@ import React, {
 } from 'react';
 
 import Button from 'components/shared/button';
-import { ReactComponent as ZoomInIcon } from 'svg/zoom-in.svg';
-import { ReactComponent as ZoomOutIcon } from 'svg/zoom-out.svg';
-import { ReactComponent as ZoomResetIcon } from 'svg/zoom-reset.svg';
-import { ReactComponent as ZoomToFitIcon } from 'svg/zoom-to-fit.svg';
+import ZoomInIcon  from 'svg/zoom-in.svg';
+import ZoomOutIcon  from 'svg/zoom-out.svg';
+import ZoomResetIcon  from 'svg/zoom-reset.svg';
+import ZoomToFitIcon  from 'svg/zoom-to-fit.svg';
 
 import css from './controls.module.scss';
 

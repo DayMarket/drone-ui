@@ -2,11 +2,11 @@ import classNames from 'classnames/bind';
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import { ReactComponent as CanceledIcon } from 'svg/status/canceled.svg';
-import { ReactComponent as FailureIcon } from 'svg/status/failure.svg';
-import { ReactComponent as InactiveIcon } from 'svg/status/inactive.svg';
-import { ReactComponent as RunningIcon } from 'svg/status/running.svg';
-import { ReactComponent as SuccessIcon } from 'svg/status/success.svg';
+import CanceledIcon from 'svg/status/canceled.svg';
+import FailureIcon from 'svg/status/failure.svg';
+import InactiveIcon from 'svg/status/inactive.svg';
+import RunningIcon from 'svg/status/running.svg';
+import SuccessIcon from 'svg/status/success.svg';
 
 import styles from './status.module.scss';
 

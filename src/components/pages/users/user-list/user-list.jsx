@@ -4,7 +4,7 @@ import React from 'react';
 
 import Avatar from 'components/shared/avatar';
 import Button from 'components/shared/button';
-import { ReactComponent as EditIcon } from 'svg/edit.svg';
+import  EditIcon from 'svg/edit.svg';
 
 import css from './user-list.module.scss';
 

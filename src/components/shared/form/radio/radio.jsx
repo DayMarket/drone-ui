@@ -2,7 +2,7 @@ import classNames from 'classnames/bind';
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import { ReactComponent as CheckboxCheckIcon } from 'svg/checkbox-check.svg';
+import CheckboxCheckIcon from 'svg/checkbox-check.svg';
 
 import Label from '../label';
 

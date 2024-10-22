@@ -6,7 +6,7 @@ import { instance } from '_constants';
 import Button from 'components/shared/button';
 import { useCustomTitle } from 'hooks';
 import { useViewerToken } from 'hooks/swr';
-import { ReactComponent as CopyIcon } from 'svg/copy.svg';
+import  CopyIcon from 'svg/copy.svg';
 
 import css from './account.module.scss';
 
