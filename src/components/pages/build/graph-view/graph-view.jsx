@@ -1,7 +1,7 @@
 import classNames from 'classnames/bind';
 import React, { useState } from 'react';
 import { useHistory, useParams } from 'react-router-dom';
-import SplitPane from 'react-split-pane';
+// import SplitPane from 'react-split-pane';
 import './graph-view.scss';
 
 import { useDynamicHeight } from 'hooks';
@@ -37,12 +37,12 @@ const GraphView = (props) => {
 
   return (
     <section className={cx('graph-wrapper')} ref={dynamicHeightRef} style={{ height: dynamicHeight }}>
-      <SplitPane
-        split="horizontal"
-        minSize={190}
-        defaultSize={dynamicHeight / 2}
-        maxSize={dynamicHeight - 190}
-      >
+      {/*<SplitPane*/}
+      {/*  split="horizontal"*/}
+      {/*  minSize={190}*/}
+      {/*  defaultSize={dynamicHeight / 2}*/}
+      {/*  maxSize={dynamicHeight - 190}*/}
+      {/*>*/}
         <div className={cx('graph-stages')}>
           <Diagram
             kind="stage"
@@ -62,7 +62,7 @@ const GraphView = (props) => {
             graphOffsetY={60}
           />
         </div>
-      </SplitPane>
+      {/*</SplitPane>*/}
       <StepInfoDrawer
         isShown={isStepInfoShown}
         hide={hideStepInfoDrawer}

@@ -1,5 +1,5 @@
 {
-  "extends": ["react-app", "airbnb", "airbnb/hooks", "airbnb/whitespace"],
+  "extends": ["airbnb", "airbnb/hooks", "airbnb/whitespace"],
   "rules": {
     "max-len": [1, {
       "code": 120,
