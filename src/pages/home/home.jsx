@@ -14,7 +14,8 @@ import { AppContext } from 'context';
 import { useLocalStorage, useCustomTitle, useToast } from 'hooks';
 import { useStore } from 'hooks/store';
 import { useViewer, useSyncAccount } from 'hooks/swr';
-import { byBuildCreatedAtDesc, byRepoNameAsc } from 'utils';
+import {audio, byBuildCreatedAtDesc, byRepoNameAsc} from 'utils';
+
 
 import styles from './home.module.scss';
 
@@ -96,8 +97,12 @@ export default function Home() {
       }
     }
   }, [isSynced, context, setContext, reload]);
+  
 
-  const handleSyncClick = () => setShouldStartSync(true);
+  const handleSyncClick = () => {
+    audio.play();
+    setShouldStartSync(true)
+  };
 
   const handleLoadMoreClick = () => setShowAllRepos(true);
 

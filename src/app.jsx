@@ -35,6 +35,9 @@ const GlobalRequestWrapper = ({ render }) => {
       });
     }
   }, [data, context, setContext]);
+  
+  
+
 
   useStreamBuildEvents();
   return isLoading ? null : render({ user: data });
