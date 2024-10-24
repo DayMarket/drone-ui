@@ -10,8 +10,8 @@
 
 # production
 /build
-/dist/files
-/dist/*_gen.go
+/build/files
+/build/*_gen.go
 
 # misc
 .DS_Store
@@ -28,6 +28,5 @@ yarn-error.log*
 # .git
 .eslintcache
 
-.env
 .env.development.local
 .env.local
