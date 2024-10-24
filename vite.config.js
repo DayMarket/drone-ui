@@ -1,13 +1,19 @@
 import {defineConfig} from 'vite';
 import react from '@vitejs/plugin-react';
 import svgr from 'vite-plugin-svgr';
+import babel from 'vite-plugin-babel';
+
 
 export default defineConfig({
+  base: '',
   plugins: [
+    babel({
+      exclude: "node_modules/**",
+    }),
     svgr(), // Enable SVG as React components
     react({
       babel: {
-        exclude: "node_modules/**",
+        exclude: "./node_modules/**",
         parserOpts: {
           plugins: ['decorators-legacy', 'classProperties'],
         },
