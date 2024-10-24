@@ -1,8 +1,8 @@
 // default server api token.
-const token = process.env.REACT_APP_DRONE_TOKEN || '';
+const token = import.meta.env.VITE_DRONE_TOKEN || '';
 
 // default server address.
-const instance = process.env.REACT_APP_DRONE_SERVER
+const instance = import.meta.env.VITE_DRONE_SERVER
  || `${window.location.protocol}//${window.location.host}`;
 
 const LOGS_LIMIT = 250;

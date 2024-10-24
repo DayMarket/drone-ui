@@ -2,7 +2,7 @@ import classNames from 'classnames/bind';
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import { ReactComponent as NotActive } from 'svg/not-active.svg';
+import NotActive from 'svg/not-active.svg';
 
 import css from './zero-state.module.scss';
 

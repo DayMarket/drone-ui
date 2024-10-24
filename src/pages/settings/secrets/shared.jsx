@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 
 import Button from 'components/shared/button';
 import Form, { Field, FormSection } from 'components/shared/form';
-import { ReactComponent as TrashIcon } from 'svg/trash.svg';
+import TrashIcon from 'svg/trash.svg';
 
 import styles from './secrets.module.scss';
 

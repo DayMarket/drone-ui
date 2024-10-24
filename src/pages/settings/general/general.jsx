@@ -8,7 +8,7 @@ import Form, { FormSection, Field } from 'components/shared/form';
 import Switch from 'components/shared/switch';
 import { useToast } from 'hooks';
 import { useRepo } from 'hooks/swr';
-import { ReactComponent as NotAllowedIcon } from 'svg/not-allowed.svg';
+import NotAllowedIcon from 'svg/not-allowed.svg';
 import { axiosWrapper, pick } from 'utils';
 
 import styles from './general.module.scss';

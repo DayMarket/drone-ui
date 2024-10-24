@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 
 import Button from 'components/shared/button';
 import { useOnClickOutside } from 'hooks';
-import { ReactComponent as CloseIcon } from 'svg/close.svg';
+import CloseIcon from 'svg/close.svg';
 
 import styles from './modal.module.scss';
 

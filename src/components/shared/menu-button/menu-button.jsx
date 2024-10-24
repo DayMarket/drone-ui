@@ -2,7 +2,7 @@ import classNames from 'classnames/bind';
 import React, { useEffect, useState, useRef } from 'react';
 
 import { useOnClickOutside } from 'hooks';
-import { ReactComponent as ChevronIcon } from 'svg/chevron-down.svg';
+import ChevronIcon from 'svg/chevron-down.svg';
 
 import css from './menu-button.module.scss';
 
