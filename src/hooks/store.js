@@ -1,9 +1,6 @@
 import Dexie from 'dexie';
 import create from 'zustand';
-import audioSrc from "../assets/sounds/ranetki.mp3"
-
-
-import {audio, axiosWrapper} from 'utils';
+import {axiosWrapper} from 'utils';
 
 // helper function that returns an object of unique repos and unique orgs
 const createSet = (input) => {
@@ -66,7 +63,7 @@ export const useStore = create((set, get) => ({
 
     await setInCache(repoSet, orgs);
     
-    audio.pause();
+    // audio.pause();
 
     set((state) => ({
       ...state,
@@ -102,7 +99,7 @@ export const useStore = create((set, get) => ({
       return;
     }
     
-    audio.play();
+    // audio.play();
 
     const repos = await axiosWrapper('/api/user/repos?latest=true', {
       method: 'GET',
@@ -113,7 +110,7 @@ export const useStore = create((set, get) => ({
     await setInCache(repoSet, orgs);
     
     
-    audio.pause();
+    // audio.pause();
     set((state) => ({
       ...state,
       repos: repoSet,

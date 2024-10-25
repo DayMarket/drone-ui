@@ -100,7 +100,7 @@ export default function Home() {
   
 
   const handleSyncClick = () => {
-    audio.play();
+    // audio.play();
     setShouldStartSync(true)
   };
 
