@@ -4,14 +4,14 @@
 /node_modules
 /.pnp
 .pnp.js
-
+.idea
 # testing
 /coverage
 
 # production
 /build
-/dist/files
-/dist/*_gen.go
+/build/files
+/build/*_gen.go
 
 # misc
 .DS_Store
@@ -25,9 +25,10 @@ yarn-debug.log*
 yarn-error.log*
 /.vscode
 
+
+/dist/files
 # .git
 .eslintcache
 
-.env
 .env.development.local
 .env.local

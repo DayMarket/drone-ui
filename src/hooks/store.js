@@ -1,6 +1,9 @@
+import Dexie from 'dexie';
 import create from 'zustand';
+import audioSrc from "../assets/sounds/ranetki.mp3"
 
-import { axiosWrapper } from 'utils';
+
+import {audio, axiosWrapper} from 'utils';
 
 // helper function that returns an object of unique repos and unique orgs
 const createSet = (input) => {
@@ -12,6 +15,25 @@ const createSet = (input) => {
   });
   return { repos, orgs: [...orgs] };
 };
+
+const db = new Dexie('repositories');
+db.version(1).stores({
+  repository: '++id, uid, slug, org',
+});
+
+
+async function setInCache(repoSet, orgs) {
+  const table = db.repository;
+
+  for await (const [key, value] of Object.entries(repoSet)) {
+    await table.add({
+      slug: key,
+      id: value.id,
+      uid: value.uid,
+      ...value,
+    });
+  }
+}
 
 export const useStore = create((set, get) => ({
   cache: {},
@@ -31,13 +53,20 @@ export const useStore = create((set, get) => ({
       }));
     }
   },
-
+  
   reload: async () => {
+    const table = db.repository;
+    await table.clear();
+
     const repos = await axiosWrapper('/api/user/repos?latest=true', {
       method: 'GET',
     });
 
     const { repos: repoSet, orgs } = createSet(repos);
+
+    await setInCache(repoSet, orgs);
+    
+    audio.pause();
 
     set((state) => ({
       ...state,
@@ -53,14 +82,27 @@ export const useStore = create((set, get) => ({
     if (get().fired) {
       return;
     }
-
-    // update the state of the store to indicate the
-    // request to fetch repository has been fired,
-    // which prevents subsequent calls.
+    
     set((state) => ({
       ...state,
       fired: true,
     }));
+
+    const table = db.repository;
+    const cacheRepositories = await table.toArray();
+
+    if (cacheRepositories.length) {
+      set((state) => ({
+        ...state,
+        repos: cacheRepositories,
+        orgs: ['DayMarket'],
+        error: undefined,
+      }));
+      console.log('GET FROM CACHE');
+      return;
+    }
+    
+    audio.play();
 
     const repos = await axiosWrapper('/api/user/repos?latest=true', {
       method: 'GET',
@@ -68,6 +110,10 @@ export const useStore = create((set, get) => ({
 
     const { repos: repoSet, orgs } = createSet(repos);
 
+    await setInCache(repoSet, orgs);
+    
+    
+    audio.pause();
     set((state) => ({
       ...state,
       repos: repoSet,
