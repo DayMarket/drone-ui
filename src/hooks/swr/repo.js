@@ -15,6 +15,6 @@ export const useRepo = ({ namespace, name }) =>
  * Таким образом drone-ui перестанет опрашивать backend.
  */
 export const useLatestRepos = () => {
+  console.log('🔥 useLatestRepos ПАТЧ ВКЛЮЧЕН');
   return { data: [], error: null, isValidating: false };
 };
-
