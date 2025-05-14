@@ -55,10 +55,10 @@ export const useStore = create((set, get) => ({
     const table = db.repository;
     await table.clear();
 
-    const repos = await axiosWrapper('/api/user/repos?latest=false', {
-      method: 'GET',
-    });
-
+    //const repos = await axiosWrapper('/api/user/repos?latest=false', {
+    //  method: 'GET',
+    //});
+    const repos = [];
     const { repos: repoSet, orgs } = createSet(repos);
 
     await setInCache(repoSet, orgs);
@@ -101,9 +101,10 @@ export const useStore = create((set, get) => ({
     
     // audio.play();
 
-    const repos = await axiosWrapper('/api/user/repos?latest=false', {
-      method: 'GET',
-    });
+    //const repos = await axiosWrapper('/api/user/repos?latest=false', {
+    //  method: 'GET',
+    //});
+    const repos = [];
 
     const { repos: repoSet, orgs } = createSet(repos);
 

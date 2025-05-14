@@ -85,7 +85,7 @@ const useSyncAccount = (shouldSync) => {
 
   const runSyncReq = async () => {
     try {
-      await axiosWrapper('/api/user/repos?async=true', { method: 'POST' });
+      // await axiosWrapper('/api/user/repos?async=true', { method: 'POST' });
       setHasSyncReqFiredOff(true);
     } catch (e) {
       setIsError(e);

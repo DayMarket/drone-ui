@@ -173,7 +173,7 @@ const useStreamBuildEvents = () => {
       default:
     }
 
-    mutateGlobal('/api/user/repos?latest=false', updateLatestRepos(repo), false);
+    //mutateGlobal('/api/user/repos?latest=false', updateLatestRepos(repo), false);
     update(repo);
   };
 
