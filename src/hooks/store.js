@@ -55,7 +55,7 @@ export const useStore = create((set, get) => ({
     const table = db.repository;
     await table.clear();
 
-    const repos = await axiosWrapper('/api/user/repos?latest=true', {
+    const repos = await axiosWrapper('/api/user/repos?latest=false', {
       method: 'GET',
     });
 
@@ -101,7 +101,7 @@ export const useStore = create((set, get) => ({
     
     // audio.play();
 
-    const repos = await axiosWrapper('/api/user/repos?latest=true', {
+    const repos = await axiosWrapper('/api/user/repos?latest=false', {
       method: 'GET',
     });
 
